@@ -1,0 +1,217 @@
+<!--  paste your HTML here  -->
+
+Here is the grade table
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        /* tasks style and form */
+
+        #tasks {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+
+        #tasks td, #tasks th{
+            border: 2px solid #ddd;
+        }
+
+        #tasks th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: pink;
+            color: grey;
+        }
+        input[type="checkbox"]{
+            width: 30px; /*Desired width*/
+            height: 20px; /*Desired height*/
+        }
+        input[type="date"]{
+            width: 123px; /*Desired width*/
+            height: 17px; /*Desired height*/
+        }
+    </style>
+</head>
+<body>
+
+<!-- tasks form attributes -->
+
+<h1>Student Assignment Planner</h1>
+<form method="POST" action="/addTask">
+    <table id="tasks">
+        <tr>
+            <th>Tasks</th>
+            <th>Course</th>
+            <th>Due Date</th>
+            <th>Done</th>
+            <th>Grade</th>
+            <th>Comments</th>
+        </tr>
+        <tr>
+            <td>Assignments</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Discussions</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Extra Credit</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Labs</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Presentations</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Projects</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Quizzes</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Reading</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Tests</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+        <tr>
+            <td>Writing</td>
+            <td><input name="course"/></td>
+            <td><input type="date" id="myDate" value=(); input name="due"/></td>
+            <td><input type="checkbox" name="completed"/></td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </td>
+            <td><input name="comments"/></td>
+        </tr>
+    </table>
+</form>
+<h2>Notes:</h2>
+</body>
+</html>
