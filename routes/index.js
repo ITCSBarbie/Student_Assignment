@@ -32,7 +32,11 @@ router.get('/checklist', function(req, res, next){
 
 
 router.get('/table', function(req, res, next){
-    res.render('gradetable');
-})
+    Assignment.find().sort().then((docs) => {
+        res.render('checklist', { title: 'Checklist', assignments: docs});
+    }).catch((err) => {
+        next(err);
+    })
+});
 
 module.exports = router;

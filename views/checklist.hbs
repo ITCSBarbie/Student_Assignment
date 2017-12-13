@@ -6,4 +6,10 @@ Display a list of assignments
 <h2>Here are all of your assignments</h2>
 
 
-To do....
+{{#each assignments}}
+    <p>{{this.type}}, {{this.assignment}};
+        {{this.type}}, {{this.course}};
+        {{this.type}}, {{this.done}};
+        {{this.type}}, {{this.grade}};
+        {{this.type}}, {{this.comments}};
+{{/each}}
